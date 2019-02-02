@@ -100,11 +100,50 @@ anchor.addEventListener('click', e => {
 
 
 // When window fully loads will get an alert
-window.addEventListener('load', e => {
-    alert('All resources finished loading!');
+// window.addEventListener('load', e => {
+//     alert('All resources finished loading!');
+// })
+
+
+
+
+// Click on any text within the body and will change to the color blue
+body.addEventListener('click', e => {
+	e.target.style.color = 'blue'; 
 })
 
 
 
+
+// Changing all the other images on the site
+
+const img1 = document.querySelector('.img1');
+img1.addEventListener('mouseover', e => {
+    img1.setAttribute('src', 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Scooby-Snacks-F.jpg/220px-Scooby-Snacks-F.jpg');
+})
+
+img1.addEventListener('mouseleave', e => {
+    img1.setAttribute('src', 'img/adventure.jpg');
+})
+
+
+
+const img2 = document.querySelector('.img2');
+img2.addEventListener('mouseover', e => {
+    img2.setAttribute('src', 'https://i.pinimg.com/originals/c7/ae/9c/c7ae9c0588da9c3210f36ab5ab136b2c.gif');
+})
+
+img2.addEventListener('mouseleave', e => {
+    img2.setAttribute('src', 'img/fun.jpg');
+})
+
+const img3 = document.querySelector('.img3');
+img3.addEventListener('mouseover', e => {
+    img3.setAttribute('src', 'https://cartoonscrapbook.com/cartoonscrapbooksupersite/wp-content/uploads/2015/11/scooby-doo-where-are-you-1969_L08.jpg');
+})
+
+img3.addEventListener('mouseleave', e => {
+    img3.setAttribute('src', 'img/destination.jpg');
+})
 
 
