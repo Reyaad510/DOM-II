@@ -98,3 +98,13 @@ anchor.addEventListener('click', e => {
 })
 
 
+
+// When window fully loads will get an alert
+window.addEventListener('load', e => {
+    alert('All resources finished loading!');
+})
+
+
+
+
+
