@@ -44,5 +44,23 @@ body.addEventListener('keyup', e => {
 })
 
 
+// Blur and Focus on entire window page
+// Must click off out of page first then click back on the page
+
+function pause() {
+    document.body.classList.add('paused');
+    log.textContent = 'Focus Lost!';
+    
+}
+
+function play() {
+    document.body.classList.remove('paused');
+    log.textContent = 'This document has focus.';
+}
+
+const log = document.getElementById('log');
+window.addEventListener('blur', pause);
+window.addEventListener('focus', play);
+
 
 
