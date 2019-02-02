@@ -367,4 +367,5 @@ img {
 .home .contact form .form-submit {
   font-size: 1.6rem;
   margin-top: 5px;
+  cursor: pointer;
 }

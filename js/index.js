@@ -63,4 +63,38 @@ window.addEventListener('blur', pause);
 window.addEventListener('focus', play);
 
 
+// Using Click and using stopPropagation() to stop two alerts from happening when clicking the button in the destination container.
+
+const destinations = document.querySelectorAll('.destination');
+destinations.forEach(destination => {
+    destination.addEventListener('click', e => {
+        alert('I clicked the destination container and not the button!');
+    });
+})
+
+const buttons = document.querySelectorAll('.btn');
+buttons.forEach(button => {
+    button.addEventListener('click', e => {
+        alert('I have been clicked in the button!');
+        e.stopPropagation();
+    });
+})
+
+
+
+
+// Below makes the page from reloading when clicking submit on a form
+
+const formSubmit = document.querySelector('.form-submit');
+formSubmit.addEventListener('click', e => {
+    e.preventDefault();
+})
+
+
+// Stop Home anchor tag from going off to website using preventDefault();
+const anchor = document.querySelector('a');
+anchor.addEventListener('click', e => {
+    e.preventDefault();
+})
+
 
