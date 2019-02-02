@@ -92,6 +92,7 @@ formSubmit.addEventListener('click', e => {
 
 
 // Stop Home anchor tag from going off to website using preventDefault();
+
 const anchor = document.querySelector('a');
 anchor.addEventListener('click', e => {
     e.preventDefault();
@@ -108,6 +109,7 @@ anchor.addEventListener('click', e => {
 
 
 // Click on any text within the body and will change to the color blue
+
 body.addEventListener('click', e => {
 	e.target.style.color = 'blue'; 
 })
@@ -116,6 +118,9 @@ body.addEventListener('click', e => {
 
 
 // Changing all the other images on the site
+
+
+// Img1
 
 const img1 = document.querySelector('.img1');
 img1.addEventListener('mouseover', e => {
@@ -127,6 +132,7 @@ img1.addEventListener('mouseleave', e => {
 })
 
 
+// Img2
 
 const img2 = document.querySelector('.img2');
 img2.addEventListener('mouseover', e => {
@@ -137,6 +143,8 @@ img2.addEventListener('mouseleave', e => {
     img2.setAttribute('src', 'img/fun.jpg');
 })
 
+
+// Img3
 const img3 = document.querySelector('.img3');
 img3.addEventListener('mouseover', e => {
     img3.setAttribute('src', 'https://cartoonscrapbook.com/cartoonscrapbooksupersite/wp-content/uploads/2015/11/scooby-doo-where-are-you-1969_L08.jpg');
